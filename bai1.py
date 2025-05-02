@@ -33,20 +33,4 @@ class Point:
             return math.sqrt((self.__x-args[0].getX())**2 + (self.__y-args[0].getY())**2)
         
         
-class PointTest:
-    def main(self):
-        diemA = Point(3,4)
-        print(diemA)
 
-        diemB = Point()
-        diemB.read()
-        print(diemB)
-
-        diemC = Point(-diemB.getX(), -diemB.getY())
-        print(diemC)
-
-        print(diemB.distance())
-
-        print(diemA.distance(diemB))
-
-PointTest().main()
